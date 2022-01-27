@@ -337,4 +337,12 @@ template {
   display: none;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=style.css.map */
