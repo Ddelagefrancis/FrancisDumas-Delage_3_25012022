@@ -1,8 +1,7 @@
 @import "./libs/normalize.scss";
 @import "./utils/box-sizing.scss";
-@import "./utils/variables";
+@import "./utils/variables.scss";
+@import "./base/fondations.scss";
 @import "./layouts/header.scss";
-
-
-
+@import "./layouts/formindex.scss";
 
