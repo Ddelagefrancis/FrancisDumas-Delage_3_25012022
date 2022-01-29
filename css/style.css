@@ -350,6 +350,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 header {
   display: block;
 }
@@ -383,8 +387,43 @@ header {
 .form__bar {
   background: #eaeaea;
   border: none;
-  font-weight: 500;
+  font-weight: 600;
   width: 130px;
+}
+
+.reservation {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 0px 0px 40px 0px;
+}
+.reservation_block {
+  display: flex;
+  justify-content: center;
+}
+.reservation__text {
+  width: 80%;
+}
+.reservation__text h1 {
+  font-family: inherit;
+}
+.reservation__text p {
+  color: #676767;
+  font-size: 17px;
+}
+.reservation__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 15px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 8px 8px -5px #9E9E9E;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+.reservation__btn:hover {
+  background-color: #bc95e9;
+  background-blend-mode: lighten;
+  box-shadow: 0px 10px 10px -2px #1d1d1d;
 }
 
 /*# sourceMappingURL=style.css.map */
