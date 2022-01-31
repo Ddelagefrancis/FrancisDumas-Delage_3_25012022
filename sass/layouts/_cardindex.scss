@@ -1,0 +1,74 @@
+.container_menu {
+    background: $color-background;
+    padding: 40px 18px;
+    margin-top: 70px;
+}
+
+.cards_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_menu {
+    display: flex;
+    width: 40px;
+    & img{
+        width: 340px;
+        height: 170px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+    }
+    &:hover{
+        transform: scale(1.03);
+        transition: ease 0.5s;
+    }
+}
+
+.card_restaurant {
+    background: white;
+    display: flex;
+    height: 240px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    margin: 5px 0px 15px 0;
+}
+
+.new {
+    border-radius: 3px;
+    background-color: #99E2D0;
+    color: #008766;
+    padding: 7px 10px;
+    font-weight: 500;
+    position: relative;
+    left: 240px;
+    top: 40px;
+}
+
+.text_menu {
+    margin-left: 20px;
+    line-height: 10px;
+    & h2{
+        font-weight: bold;
+        font-size: 18px;
+    }
+   & p{
+       margin-top: 0px;
+   }
+}
+
+.heart {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: -25px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    &:hover .fas{
+        color: $color-primary;
+        -webkit-text-stroke-color: white;
+        
+    }
+}
