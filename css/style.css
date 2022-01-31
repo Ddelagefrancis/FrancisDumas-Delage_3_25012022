@@ -354,6 +354,11 @@ h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   display: block;
 }
@@ -405,6 +410,7 @@ header {
 }
 .reservation__text h1 {
   font-family: inherit;
+  font-size: 1.5em;
 }
 .reservation__text p {
   color: #676767;
@@ -424,6 +430,127 @@ header {
   background-color: #bc95e9;
   background-blend-mode: lighten;
   box-shadow: 0px 10px 10px -2px #1d1d1d;
+}
+
+.filters h1 {
+  font-family: inherit;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+.filters__btn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 15px;
+  border: none;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin: 25px;
+  box-shadow: 0 5px 8px lightgrey;
+  cursor: pointer;
+  transition: 300ms;
+}
+.filters__btn:hover {
+  background-color: #f2eafb;
+  background-blend-mode: lighten;
+}
+.filters__btn:hover:hover .fas {
+  color: #9356DC;
+}
+.filters span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  position: relative;
+  left: -25px;
+  margin-top: 15px;
+  padding-top: 2px;
+}
+.filters .fas {
+  line-height: 1;
+  margin: 15px 20px 0 -5px;
+  font-size: 20px;
+  color: grey;
+}
+.filters p {
+  font-weight: 600;
+}
+
+.container_menu {
+  background: #f6f6f6;
+  padding: 40px 18px;
+  margin-top: 70px;
+}
+
+.cards_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_menu {
+  display: flex;
+  width: 40px;
+}
+.card_menu img {
+  width: 340px;
+  height: 170px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+.card_menu:hover {
+  transform: scale(1.03);
+  transition: ease 0.5s;
+}
+
+.card_restaurant {
+  background: white;
+  display: flex;
+  height: 240px;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  margin: 5px 0px 15px 0;
+}
+
+.new {
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px 10px;
+  font-weight: 500;
+  position: relative;
+  left: 240px;
+  top: 40px;
+}
+
+.text_menu {
+  margin-left: 20px;
+  line-height: 10px;
+}
+.text_menu h2 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.text_menu p {
+  margin-top: 0px;
+}
+
+.heart {
+  position: absolute;
+  margin-left: 260px;
+  margin-top: -25px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.heart:hover .fas {
+  color: #9356DC;
+  -webkit-text-stroke-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
