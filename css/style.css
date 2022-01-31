@@ -553,4 +553,36 @@ header {
   -webkit-text-stroke-color: white;
 }
 
+footer {
+  background-color: #353535;
+  padding: 10px;
+}
+footer h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.footer_block {
+  display: flex;
+}
+
+.footer__ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer__ul li {
+  color: #fff;
+  line-height: 30px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.footer__ul li:hover {
+  color: #9356DC;
+}
+.footer__ul i {
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
