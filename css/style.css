@@ -394,6 +394,7 @@ header {
   border: none;
   font-weight: 600;
   width: 130px;
+  padding: 2px;
 }
 
 .reservation {
@@ -493,17 +494,12 @@ header {
 
 .card_menu {
   display: flex;
-  width: 40px;
 }
 .card_menu img {
   width: 340px;
   height: 170px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
-}
-.card_menu:hover {
-  transform: scale(1.03);
-  transition: ease 0.5s;
 }
 
 .card_restaurant {
@@ -515,17 +511,17 @@ header {
   border: 0px solid transparent;
   box-shadow: 0px 0px 6px 0px #0000002e;
   margin: 5px 0px 15px 0;
+  position: relative;
 }
-
-.new {
+.card_restaurant .new {
   border-radius: 3px;
   background-color: #99E2D0;
   color: #008766;
   padding: 7px 10px;
   font-weight: 500;
-  position: relative;
-  left: 240px;
-  top: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .text_menu {
@@ -542,15 +538,16 @@ header {
 
 .heart {
   position: absolute;
-  margin-left: 260px;
-  margin-top: -25px;
+  margin-left: 270px;
+  margin-top: 190px;
   color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  text-shadow: 0 0 2px #4d4a4a, 0 0 2px #4d4a4a;
 }
 .heart:hover .fas {
-  color: #9356DC;
-  -webkit-text-stroke-color: white;
+  cursor: pointer;
+  color: #FF79DA;
+  text-shadow: none;
+  transition-duration: 2000ms;
 }
 
 footer {
