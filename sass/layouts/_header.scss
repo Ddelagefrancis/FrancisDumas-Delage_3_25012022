@@ -11,3 +11,17 @@ header {
     display: flex;
     justify-content: center;
 }
+
+/** règles pour les pages menus **/
+.logo_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    & i{
+        font-size: 25px;
+    }
+   & img{
+       width: 60%;
+       margin-top: 10px;
+   }
+}
