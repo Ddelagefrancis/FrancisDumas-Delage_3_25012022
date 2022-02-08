@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -373,6 +374,20 @@ header {
   justify-content: center;
 }
 
+/** règles pour les pages menus **/
+.logo_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo_menu i {
+  font-size: 25px;
+}
+.logo_menu img {
+  width: 60%;
+  margin-top: 10px;
+}
+
 .position {
   margin-top: 10px;
   background: #eaeaea;
@@ -580,6 +595,157 @@ footer h1 {
 }
 .footer__ul i {
   margin-right: 10px;
+}
+
+.fa-arrow-left:hover {
+  color: #FF79DA;
+  transition-duration: 1000ms;
+}
+
+.cover {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  padding: 0 1em 2em 1em;
+  margin-top: -40px;
+  position: relative;
+}
+.menu .title {
+  display: flex;
+  align-items: baseline;
+}
+.menu h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.menu h3 {
+  text-transform: uppercase;
+  border-top: 0px;
+  border-bottom: 3px solid #98ce98;
+  width: 50px;
+  font-family: "roboto_light";
+}
+
+.heart--menu {
+  color: #f6f6f6;
+  text-shadow: 0 0 2px #4d4a4a, 0 0 2px #4d4a4a;
+}
+.heart--menu:hover {
+  cursor: pointer;
+  color: #FF79DA;
+  text-shadow: none;
+  transition-duration: 2000ms;
+}
+
+.first {
+  width: 100%;
+}
+.first .entries {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 5px #d5d1d1;
+  border-radius: 15px;
+  margin: 10px;
+  background: white;
+  height: 70px;
+}
+.first .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "roboto_light";
+  font-size: 14px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.title__menu {
+  font-weight: bold;
+}
+
+.price__menu {
+  font-weight: bold;
+}
+
+.text__menu {
+  line-height: 2;
+}
+
+.second {
+  width: 100%;
+}
+.second .flat {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 5px #d5d1d1;
+  border-radius: 15px;
+  margin: 10px;
+  background: white;
+  height: 70px;
+}
+.second .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "roboto_light";
+  font-size: 14px;
+}
+
+.last {
+  width: 100%;
+}
+.last .desserts {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 5px #d5d1d1;
+  border-radius: 15px;
+  margin: 10px;
+  background: white;
+  height: 70px;
+}
+.last .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "roboto_light";
+  font-size: 14px;
+}
+
+.order {
+  margin: 40px 0 30px 70px;
+}
+.order__btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 15px;
+  border-radius: 30px;
+  width: 200px;
+  border: none;
+  box-shadow: 0px 8px 8px -5px #9E9E9E;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+.order__btn:hover {
+  background-color: #bc95e9;
+  background-blend-mode: lighten;
+  box-shadow: 0px 10px 10px -2px #1d1d1d;
 }
 
 /*# sourceMappingURL=style.css.map */
