@@ -565,38 +565,6 @@ header {
   transition-duration: 2000ms;
 }
 
-footer {
-  background-color: #353535;
-  padding: 10px;
-}
-footer h1 {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 100;
-  margin-left: 20px;
-}
-
-.footer_block {
-  display: flex;
-}
-
-.footer__ul {
-  list-style: none;
-  padding-left: 0px;
-}
-.footer__ul li {
-  color: #fff;
-  line-height: 30px;
-  margin-left: 20px;
-  font-size: 18px;
-}
-.footer__ul li:hover {
-  color: #9356DC;
-}
-.footer__ul i {
-  margin-right: 10px;
-}
-
 .fa-arrow-left:hover {
   color: #FF79DA;
   transition-duration: 1000ms;
@@ -746,6 +714,38 @@ footer h1 {
   background-color: #bc95e9;
   background-blend-mode: lighten;
   box-shadow: 0px 10px 10px -2px #1d1d1d;
+}
+
+footer {
+  background-color: #353535;
+  padding: 10px;
+}
+footer h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+  margin-left: 20px;
+}
+
+.footer_block {
+  display: flex;
+}
+
+.footer__ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.footer__ul li {
+  color: #fff;
+  line-height: 30px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.footer__ul li:hover {
+  color: #9356DC;
+}
+.footer__ul i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
