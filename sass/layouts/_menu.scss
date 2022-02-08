@@ -1,0 +1,142 @@
+.fa-arrow-left:hover {
+    color: $color-secondary;
+    transition-duration: 1000ms;
+}
+
+.cover {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.menu {
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 0 1em 2em 1em;
+    margin-top: -40px;
+    position: relative;
+    & .title{
+        display: flex;
+        align-items: baseline;
+    }
+    & h2{
+        font-family: $font-shrik;
+        font-size: 28px;
+        font-weight: 100;
+        margin-left: 10px;
+        margin-right: 30px;
+    }
+    & h3{
+        text-transform: uppercase;
+        border-top: 0px;
+        border-bottom: 3px solid #98ce98;
+        width: 50px;
+        font-family: "roboto_light";
+    } 
+}
+
+.heart--menu {
+    color: $color-background;
+    text-shadow: 0 0 2px rgb(77, 74, 74), 0 0 2px rgb(77, 74, 74);
+    &:hover{
+        cursor: pointer;
+        color: $color-secondary;
+        text-shadow: none;
+        transition-duration: 2000ms;
+    }
+}
+
+.first {
+    width: 100%;
+    & .entries {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 5px #d5d1d1;
+        border-radius: 15px;
+        margin: 10px;
+        background: white;
+        height: 70px;
+    }
+    & .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "roboto_light";
+        font-size: 14px;      
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.title__menu {
+    font-weight: bold;
+}
+
+.price__menu{
+    font-weight: bold;
+
+}
+.text__menu {
+    line-height: 2;
+}
+
+.second {
+    width: 100%;
+    & .flat {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 5px #d5d1d1;
+        border-radius: 15px;
+        margin: 10px;
+        background: white;
+        height: 70px;
+    }
+    & .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "roboto_light";
+        font-size: 14px;      
+    }
+}
+
+.last {
+    width: 100%;
+    & .desserts {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 5px 5px 5px #d5d1d1;
+        border-radius: 15px;
+        margin: 10px;
+        background: white;
+        height: 70px;
+    }
+    & .price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: "roboto_light";
+        font-size: 14px;      
+    }
+}
+
+.order {
+    margin: 40px 0 30px 70px;
+    &__btn {
+      @include btn-order;
+        &:hover {
+            background-color: lighten($color-primary, 15);
+            background-blend-mode: lighten;
+            box-shadow: 0px 10px 10px -2px #1d1d1d;
+        }
+    }
+}
