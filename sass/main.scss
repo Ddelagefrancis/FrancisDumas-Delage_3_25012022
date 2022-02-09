@@ -4,11 +4,12 @@
 @import "./utils/mixins.scss";
 @import "./base/fondations.scss";
 @import "./layouts/header.scss";
-@import "./layouts/formindex.scss";
 @import "./layouts/reservation";
 @import "./layouts/filters";
-@import "./layouts/cardindex";
 @import "./layouts/menu";
 @import "./layouts/footer";
+@import "./pages/formindex.scss";
+@import "./pages/cardindex";
+@import "./pages/loader-spinner";
 
 
