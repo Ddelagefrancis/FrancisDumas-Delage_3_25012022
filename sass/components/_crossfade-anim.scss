@@ -1,0 +1,27 @@
+.entries {
+    animation-duration: 3s;
+    animation: Crossfade 800ms 400ms ease-in-out both;
+}
+
+.flat {
+    animation-duration: 3s;
+    animation: Crossfade 800ms 400ms ease-in-out both;
+    animation-delay: 2s;
+}
+
+.desserts {
+    animation-duration: 3s;
+    animation: Crossfade 800ms 400ms ease-in-out both;
+    animation-delay: 3s;
+}
+
+@keyframes Crossfade {
+    0% {
+        opacity: 0;
+    transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+    transform: translateY(0);
+    }
+}
