@@ -763,8 +763,8 @@ footer h1 {
   z-index: 10001;
   overflow: hidden;
   background: #0b0b0b;
-  opacity: 0.6;
-  animation: disapear 3s;
+  opacity: 1;
+  animation: disapear 4s;
   animation-fill-mode: forwards;
 }
 
@@ -803,6 +803,33 @@ footer h1 {
   100% {
     transform: rotate(360deg);
     opacity: 0;
+  }
+}
+.entries {
+  animation-duration: 3s;
+  animation: Crossfade 800ms 400ms ease-in-out both;
+}
+
+.flat {
+  animation-duration: 3s;
+  animation: Crossfade 800ms 400ms ease-in-out both;
+  animation-delay: 2s;
+}
+
+.desserts {
+  animation-duration: 3s;
+  animation: Crossfade 800ms 400ms ease-in-out both;
+  animation-delay: 3s;
+}
+
+@keyframes Crossfade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
