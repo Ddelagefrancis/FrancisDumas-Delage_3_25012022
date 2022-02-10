@@ -12,8 +12,8 @@
     z-index: 10001;
     overflow: hidden;
     background: #0b0b0b;
-    opacity: 0.6;
-    animation: disapear 3s;
+    opacity: 1;
+    animation: disapear 4s;
     animation-fill-mode: forwards;
 }
 .custom-loading-spinner::after {
