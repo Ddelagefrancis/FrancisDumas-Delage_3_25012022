@@ -806,18 +806,15 @@ footer h1 {
   }
 }
 .entries {
-  animation-duration: 3s;
   animation: Crossfade 800ms 400ms ease-in-out both;
 }
 
 .flat {
-  animation-duration: 3s;
   animation: Crossfade 800ms 400ms ease-in-out both;
   animation-delay: 2s;
 }
 
 .desserts {
-  animation-duration: 3s;
   animation: Crossfade 800ms 400ms ease-in-out both;
   animation-delay: 3s;
 }
@@ -830,6 +827,79 @@ footer h1 {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+.coche {
+  text-align: center;
+  visibility: hidden;
+}
+.coche .fa-check-circle {
+  visibility: hidden;
+  font-weight: bolder;
+  color: white;
+  font-size: large;
+}
+
+.menu .entries:hover .fa-check-circle {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu .flat:hover .fa-check-circle {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu .desserts:hover .fa-check-circle {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.menu .entries:hover .coche {
+  animation-fill-mode: forwards;
+  padding-top: 25px;
+  animation-duration: 1s;
+  animation-name: selected;
+}
+
+.menu .flat:hover .coche {
+  animation-fill-mode: forwards;
+  padding-top: 25px;
+  animation-duration: 1s;
+  animation-name: selected;
+}
+
+.menu .desserts:hover .coche {
+  animation-fill-mode: forwards;
+  padding-top: 25px;
+  animation-duration: 1s;
+  animation-name: selected;
+}
+
+@keyframes selected {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 50px;
+    background-color: #99E2D0;
+    height: 70px;
+    visibility: visible;
+    border-radius: 0px 10px 10px 0px;
   }
 }
 
