@@ -23,7 +23,10 @@ footer {
         font-size: 18px;
     }
     & li:hover{
-        color: $color-primary;
+        background: linear-gradient(120deg,$color-secondary 0%,$color-primary 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     & i{
         margin-right: 10px;
