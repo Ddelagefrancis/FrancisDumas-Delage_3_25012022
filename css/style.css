@@ -388,6 +388,14 @@ header {
   margin-top: 10px;
 }
 
+.fa-arrow-left:hover {
+  background: linear-gradient(120deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 1000ms;
+}
+
 .reservation {
   background: #f6f6f6;
   text-align: center;
@@ -470,11 +478,6 @@ header {
 }
 .filters p {
   font-weight: 600;
-}
-
-.fa-arrow-left:hover {
-  color: #FF79DA;
-  transition-duration: 1000ms;
 }
 
 .cover {
