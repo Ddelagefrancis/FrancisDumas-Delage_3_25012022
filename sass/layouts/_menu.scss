@@ -9,6 +9,13 @@
     margin-top: 10px;
 }
 
+.cover--height {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
 .menu {
     background-color: $color-background;
     display: flex;
@@ -79,14 +86,22 @@
 
 .title__menu {
     font-weight: bold;
+    white-space: nowrap; /* mis en place rognage titre début */
+    overflow: hidden;
+    text-overflow: ellipsis;
+	max-width: 95%; /* mis en place rognage texte fin */
 }
 
 .price__menu{
     font-weight: bold;
-
+    
 }
 .text__menu {
     line-height: 2;
+    white-space: nowrap; /* mis en place rognage texte début */
+    overflow: hidden;
+    text-overflow: ellipsis;
+	max-width: 90%; /* mis en place rognage texte fin */
 }
 
 .second {
@@ -132,7 +147,7 @@
 .order {
     margin: 40px 0 30px 70px;
     &__btn {
-      @include btn-order;
+      @include btn-order; /* appel du mixin bouton commander */
         &:hover {
             background-color: lighten($color-primary, 15);
             background-blend-mode: lighten;
