@@ -526,7 +526,10 @@ header {
 }
 .heart--menu:hover {
   cursor: pointer;
-  color: #FF79DA;
+  background: linear-gradient(360deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
   transition-duration: 2000ms;
 }
@@ -763,7 +766,10 @@ footer h1 {
 }
 .heart:hover .fas {
   cursor: pointer;
-  color: #FF79DA;
+  background: linear-gradient(360deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow: none;
   transition-duration: 2000ms;
 }
