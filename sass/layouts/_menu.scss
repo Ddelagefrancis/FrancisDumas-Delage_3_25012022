@@ -1,3 +1,4 @@
+
 .cover {
     width: 100%;
     object-fit: cover;
@@ -83,8 +84,8 @@
 }
 
 .title__menu {
-    font-weight: bold;
-    white-space: nowrap; /* mis en place rognage titre début */
+    font-weight: bold;/* mis en place rognage titre début */
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
 	max-width: 95%; /* mis en place rognage texte fin */
@@ -95,8 +96,8 @@
     
 }
 .text__menu {
-    line-height: 2;
-    white-space: nowrap; /* mis en place rognage texte début */
+    line-height: 2;/* mis en place rognage texte début */
+    white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
 	max-width: 90%; /* mis en place rognage texte fin */
