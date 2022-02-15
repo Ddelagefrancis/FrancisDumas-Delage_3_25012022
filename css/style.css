@@ -675,7 +675,10 @@ footer h1 {
   font-size: 18px;
 }
 .footer__ul li:hover {
-  color: #9356DC;
+  background: linear-gradient(120deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer__ul i {
   margin-right: 10px;
