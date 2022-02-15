@@ -61,7 +61,10 @@
     text-shadow: 0 0 2px rgb(77, 74, 74), 0 0 2px rgb(77, 74, 74);    
     &:hover .fas{
         cursor: pointer;
-        color: $color-secondary;
+        background: linear-gradient(360deg,$color-secondary 0%,$color-primary 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         text-shadow: none;
         transition-duration: 2000ms;
     }
