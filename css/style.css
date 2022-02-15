@@ -566,8 +566,8 @@ header {
 
 .title__menu {
   font-weight: bold;
-  white-space: nowrap;
   /* mis en place rognage titre début */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 95%;
@@ -580,8 +580,8 @@ header {
 
 .text__menu {
   line-height: 2;
-  white-space: nowrap;
   /* mis en place rognage texte début */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 90%;
