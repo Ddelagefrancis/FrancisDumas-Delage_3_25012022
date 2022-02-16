@@ -1,17 +1,40 @@
-
 .cover {
     width: 100%;
     object-fit: cover;
-    margin-top: 10px;
+    @include media-min("tablet-up"){
+        height: 200px;
+    }
+    @include media-min("desktop-up"){
+        height: 380px;
+    }
+    @include media-min("desktop-down"){
+        height: 380px;
+    }
+    @include media-min("widescreen-up"){
+        height: 380px;
+    }
 }
 
 .cover--height {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    margin-top: 10px;
+    @include media-min("tablet-up"){
+        height: 380px;
+    }
+    @include media-min("desktop-up"){
+        height: 380px;
+    }
+    @include media-min("desktop-down"){
+        height: 380px;
+    }
+    @include media-min("widescreen-up"){
+        height: 380px;
+    }
 }
-
+section {
+    background-color: $color-background;
+}
 .menu {
     background-color: $color-background;
     display: flex;
@@ -39,7 +62,7 @@
         border-bottom: 3px solid #98ce98;
         width: 50px;
         font-family: "roboto_light";
-    } 
+    }
 }
 
 .heart--menu {
@@ -144,7 +167,9 @@
 }
 
 .order {
-    margin: 40px 0 30px 70px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
     &__btn {
       @include btn-order; /* appel du mixin bouton commander */
         &:hover {
