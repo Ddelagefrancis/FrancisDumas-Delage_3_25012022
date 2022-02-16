@@ -7,6 +7,15 @@
 .cards_menu {
     display: flex;
     flex-direction: column;
+    @include media-min("tablet-up"){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @include media-min("widescreen-up"){
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .card_menu {
