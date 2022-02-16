@@ -20,3 +20,18 @@
     cursor: pointer;
     transition: 400ms;
 }
+
+$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
+
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)){
+        @content;
+    }
+}
