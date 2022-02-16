@@ -11,6 +11,13 @@ footer {
             justify-content: center;
         }
     }
+    & h1:hover{
+        cursor: pointer;
+        background: linear-gradient(360deg,$color-secondary 0%,$color-primary 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .footer_block{
