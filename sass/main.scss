@@ -3,6 +3,8 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
 @import "./base/fondations.scss";
+@import "./components/crossfade-anim";
+@import "./components/rotation-coche";
 @import "./layouts/header.scss";
 @import "./layouts/reservation";
 @import "./layouts/filters";
@@ -11,6 +13,3 @@
 @import "./pages/formindex.scss";
 @import "./pages/cardindex";
 @import "./pages/loader-spinner";
-@import "./components/crossfade-anim";
-@import "./components/rotation-coche";
-
