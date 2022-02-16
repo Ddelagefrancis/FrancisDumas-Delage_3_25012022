@@ -12,7 +12,20 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    @include media-min("desktop-up"){
+        column-gap: 75px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @include media-min("desktop-down"){
+        column-gap: 115px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     @include media-min("widescreen-up"){
+        column-gap: 0px;
         flex-direction: row;
         justify-content: space-around;
     }
