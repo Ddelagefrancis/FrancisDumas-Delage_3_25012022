@@ -1,5 +1,5 @@
 .filters {
-    
+   
     & h1{
         font-family: inherit;
         font-size: 1.5em;
@@ -34,17 +34,48 @@
         background-color: $color-primary;
         color: white;
         position: relative;
-        left: -25px;
+        left: -30px;
         margin-top: 15px;
         padding-top: 2px;
+        @include media-min("desktop-up"){
+            left: -35px;
+        }
+        @include media-min("desktop-down"){
+            left: -35px;
+        }
+        @include media-min("widescreen-up"){
+            left: -55px;
+        }
     }
     .fas {
         line-height: 1;
-        margin: 15px 20px 0 -5px;
+        margin: 15px 20px 0 -15px;
         font-size: 20px;
         color: grey;
     }
     & p {
         font-weight: 600;
+    }
+    & div{
+        @include media-min("desktop-up"){
+            display: flex;
+            width: 95%;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+        @include media-min("desktop-down"){
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @include media-min("widescreen-up"){
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+           column-gap: 50px;
+        }
     }
 }
