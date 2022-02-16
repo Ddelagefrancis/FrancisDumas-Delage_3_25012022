@@ -6,11 +6,18 @@ footer {
         font-size: 22px;
         font-weight: 100;
         margin-left: 20px;
+        @include media-min("tablet-up"){
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
 .footer_block{
     display: flex;
+    @include media-min("tablet-up"){
+        justify-content: center;
+    }
 }
 
 .footer__ul{
