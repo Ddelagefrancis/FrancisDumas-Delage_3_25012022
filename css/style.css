@@ -362,11 +362,32 @@ a {
 
 header {
   display: block;
+  margin-bottom: 10px;
 }
 
 .logo img {
   width: 60%;
   margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo img {
+    width: 40%;
+  }
 }
 
 .logo a {
@@ -386,6 +407,26 @@ header {
 .logo_menu img {
   width: 60%;
   margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .logo_menu img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo_menu img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .logo_menu img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo_menu img {
+    width: 40%;
+  }
 }
 
 .fa-arrow-left:hover {
@@ -466,31 +507,113 @@ header {
   background-color: #9356DC;
   color: white;
   position: relative;
-  left: -25px;
+  left: -30px;
   margin-top: 15px;
   padding-top: 2px;
 }
+@media screen and (min-width: 1024px) {
+  .filters span {
+    left: -35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .filters span {
+    left: -35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .filters span {
+    left: -55px;
+  }
+}
 .filters .fas {
   line-height: 1;
-  margin: 15px 20px 0 -5px;
+  margin: 15px 20px 0 -15px;
   font-size: 20px;
   color: grey;
 }
 .filters p {
   font-weight: 600;
 }
+@media screen and (min-width: 1024px) {
+  .filters div {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .filters div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .filters div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+  }
+}
 
 .cover {
   width: 100%;
   object-fit: cover;
-  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cover {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cover {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cover {
+    height: 380px;
+  }
 }
 
 .cover--height {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cover--height {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cover--height {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cover--height {
+    height: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cover--height {
+    height: 380px;
+  }
+}
+
+section {
+  background-color: #f6f6f6;
 }
 
 .menu {
@@ -629,7 +752,9 @@ header {
 }
 
 .order {
-  margin: 40px 0 30px 70px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 .order__btn {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -659,9 +784,27 @@ footer h1 {
   font-weight: 100;
   margin-left: 20px;
 }
+@media screen and (min-width: 768px) {
+  footer h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer h1:hover {
+  cursor: pointer;
+  background: linear-gradient(360deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .footer_block {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .footer_block {
+    justify-content: center;
+  }
 }
 
 .footer__ul {
@@ -717,6 +860,36 @@ footer h1 {
 .cards_menu {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .cards_menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards_menu {
+    column-gap: 75px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cards_menu {
+    column-gap: 115px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards_menu {
+    column-gap: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .card_menu {
