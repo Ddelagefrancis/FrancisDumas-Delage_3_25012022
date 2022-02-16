@@ -5,6 +5,18 @@ header {
 .logo img{
     width: 60%;
     margin-top: 10px;
+    @include media-min("tablet-up"){
+        width: 50%;
+    }
+    @include media-min("desktop-up"){
+        width: 40%;
+    }
+    @include media-min("desktop-down"){
+        width: 40%;
+    }
+    @include media-min("widescreen-up"){
+        width: 40%;
+    }
 }
 
 .logo a {
@@ -23,6 +35,18 @@ header {
    & img{
        width: 60%;
        margin-top: 10px;
+    @include media-min("tablet-up"){
+        width: 50%;
+    }
+    @include media-min("desktop-up"){
+        width: 40%;
+    }
+    @include media-min("desktop-down"){
+        width: 40%;
+    }
+    @include media-min("widescreen-up"){
+        width: 40%;
+    }
    }
 }
 .fa-arrow-left:hover {
