@@ -67,15 +67,32 @@ section {
 
 .heart--menu {
     color: $color-background;
-    text-shadow: 0 0 2px rgb(77, 74, 74), 0 0 2px rgb(77, 74, 74);
-    &:hover{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(80, 80, 80);
+    &:hover {
         cursor: pointer;
-        background: linear-gradient(360deg,$color-secondary 0%,$color-primary 100%);
-        background-clip: border-box;
+        animation: heart 1500ms ease-out forwards;
+    }
+}
+
+@keyframes heart {
+    0% {
+        background: linear-gradient(120deg,$color-primary, $color-secondary);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: none;
-        transition-duration: 2000ms;
+        opacity: 0;
+        
+    }
+    50% {
+        background: linear-gradient(240deg,$color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        opacity: 0.4;
+    }
+    100% {
+        background: linear-gradient(360deg,$color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-stroke-color: transparent;
+        color: transparent;
+        opacity: 1;
     }
 }
 
