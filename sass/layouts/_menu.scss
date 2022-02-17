@@ -196,3 +196,15 @@ section {
         }
     }
 }
+
+.menu--desktop {
+    width: 100%;
+    @include media-min("desktop-midle"){
+        display: flex;
+        flex-direction: row;
+    }
+    @include media-min("desktop-down"){
+        display: flex;
+        flex-direction: row;
+    }
+}
