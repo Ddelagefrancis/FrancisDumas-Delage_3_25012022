@@ -1027,6 +1027,7 @@ footer h1:hover {
 
 .card_menu {
   display: flex;
+  justify-content: center;
 }
 .card_menu img {
   width: 340px;
