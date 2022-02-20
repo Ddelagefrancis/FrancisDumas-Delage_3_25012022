@@ -954,6 +954,11 @@ footer h1:hover {
 .footer__ul i {
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .footer__ul {
+    display: flex;
+  }
+}
 
 .position {
   margin-top: 10px;
