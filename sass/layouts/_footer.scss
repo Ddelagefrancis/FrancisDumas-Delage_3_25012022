@@ -30,6 +30,7 @@ footer {
 .footer__ul{
     list-style: none;
     padding-left: 0px;
+   
     & li{
         color: #fff;
         line-height: 30px;
@@ -44,5 +45,8 @@ footer {
     }
     & i{
         margin-right: 10px;
+    }
+    @include media-min("tablet-up"){
+        display: flex;
     }
 }
