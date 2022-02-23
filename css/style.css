@@ -575,6 +575,12 @@ header {
   font-size: 1.5em;
   margin-left: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .filters h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
 .filters__btn {
   display: flex;
   flex-wrap: wrap;
@@ -620,7 +626,7 @@ header {
 }
 @media screen and (min-width: 1440px) {
   .filters span {
-    left: -55px;
+    left: -25px;
   }
 }
 .filters .fas {
@@ -633,7 +639,7 @@ header {
   font-weight: 600;
 }
 @media screen and (min-width: 1024px) {
-  .filters div {
+  .filters .filters--desktop {
     display: flex;
     width: 95%;
     flex-direction: row;
@@ -641,7 +647,7 @@ header {
   }
 }
 @media screen and (min-width: 1280px) {
-  .filters div {
+  .filters .filters--desktop {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -649,7 +655,7 @@ header {
   }
 }
 @media screen and (min-width: 1440px) {
-  .filters div {
+  .filters .filters--desktop {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -1103,7 +1109,7 @@ footer h1:hover {
   }
 }
 .custom-loading-spinner {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   pointer-events: none;
@@ -1114,17 +1120,17 @@ footer h1:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 10001;
+  z-index: 10;
   overflow: hidden;
   background: #0b0b0b;
   opacity: 1;
-  animation: disapear 4s;
+  animation: disapear 3s;
   animation-fill-mode: forwards;
 }
 
 .custom-loading-spinner::after {
   content: "";
-  z-index: 10002;
+  z-index: 20;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1134,7 +1140,7 @@ footer h1:hover {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: custom-loading 4s;
+  animation: custom-loading 3s;
   animation-fill-mode: forwards;
 }
 
@@ -1153,6 +1159,10 @@ footer h1:hover {
 @keyframes custom-loading {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
