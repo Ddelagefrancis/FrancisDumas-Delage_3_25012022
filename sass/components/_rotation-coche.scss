@@ -9,6 +9,7 @@
     }
 }
 
+/* rotation animation of the check mark validate  */
 .menu .entries:hover .fa-check-circle {
     animation-name: rotation;
     animation-duration: 1s;
@@ -37,6 +38,7 @@
     }
 }
 
+/* animation of the green background around the validate tick  */
 .menu .entries:hover .coche {
     animation-fill-mode: forwards;
     padding-top: 25px;
