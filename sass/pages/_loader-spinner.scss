@@ -4,6 +4,8 @@
     height: 100%;
     pointer-events: none;
 }
+
+/* black screen background loader spinner accueil  */
 .custom-loading-spinner::before {
     content: "";
     position: absolute;
@@ -16,6 +18,21 @@
     animation: disapear 3s;
     animation-fill-mode: forwards;
 }
+
+@keyframes disapear {
+    99% {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+/* the rotating circle of the loader spinner  */
 .custom-loading-spinner::after {
     content: "";
     z-index: 20;
@@ -31,18 +48,7 @@
     animation: custom-loading 3s;
     animation-fill-mode: forwards;
 }
-@keyframes disapear {
-    99% {
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-    }
-    100% {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-}
+
 @keyframes custom-loading {
     0% { 
         transform: rotate(0deg);
