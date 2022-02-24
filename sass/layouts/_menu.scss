@@ -67,6 +67,7 @@ section {
 
 .heart--menu {
     color: $color-background;
+    /* Display border icon */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(80, 80, 80);
     &:hover {
