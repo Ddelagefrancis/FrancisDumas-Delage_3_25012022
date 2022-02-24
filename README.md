@@ -4,8 +4,11 @@ La cible étant les personnes connectées et pressées, le site sera développé
 l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
 Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
 leur mise en page est libre.
+
 ● L’ensemble du site devra être responsive sur mobile, tablette et desktop.
+
 ● Les pages devront passer la validation W3C en HTML et CSS sans erreur.
+
 ● Le site doit être parfaitement compatible avec les dernières versions desktop de
 Chrome et Firefox.
 
